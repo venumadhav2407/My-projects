@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+/* smooth scroll effects */
+html{
+   scroll-behavior: smooth;
+}
+
+
+
+/*  Responsive webpage */ 
+@media screen and (max-width: 600px) {
+    body{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+/* div Image */
+.image{
+    width: 100%;
+    height: 100vh;
+    background-image: url('events.jpg');
+    background-position: left center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+
+/* navbar */ 
+
+.topnav{
+    position: absolute;
+    right: 5%;
+    top: 15%;
+}
+
+
+
+
+
+/* topnav links */
+
+.topnav a{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 3px 3px 2px black;
+    color: rgb(211, 206, 206); 
+}
+
+
+#mytopnav a:hover{
+    border-bottom: 2px solid red;
+}
+
+
+/* hide the nav */
+.topnav .icon{
+    display: none;
+}
+
+
+
+/* media query for topnav */ 
+
+@media screen and (max-width: 600px) {
+        .topnav a{
+            display: none;
+        }
+
+        .topnav a.icon{
+            color: rgb(211, 206, 206); 
+            display: block;
+            position: absolute;
+            right: 10px;
+        }
+}
+
+
+@media screen and (max-width: 600px) {
+
+         a{
+            padding: 5px;
+            height: 45px;
+        }
+        .topnav:hover a.icon{display: none;}
+
+        .topnav:hover a{
+            display: block;
+        }
+
+
+
+}
+
+
+
+/******************about this website***************/
+.about-this-website{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, rgba(238, 82, 10, 0.5), rgba(6, 7, 75, 0.5) );
+}
+
+h2{
+    padding-bottom: 15px;
+    font-weight: bolder;
+    color: white;
+}
+
+p{
+    text-align: center;
+    font-size: larger;
+    color: rgb(95, 36, 119);
+}
+
+
+
+/* responsive about this page */ 
+@media screen and (max-width: 600px) {
+    p{
+        font-size: 3vw;
+    }    
+
+    h2{
+        text-align: center;
+    }
+}
+
+
+
+
+/*********************************************************************************/
+
+/* Event speaker */ 
+
+.speakers{
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgba(180, 211, 45, 0.5), rgba(29, 71, 175, 0.5) );
+
+}
+
+/* heading */ 
+h1{
+    color: white;
+    padding: 5px;
+}
+
+
+
+
+.grid-container{
+    padding: 25px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/* persion div */ 
+#person{
+    padding: 50px;
+}
+
+/** per image */ 
+img.per{
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+
+/* figcaption */
+figcaption{
+    font-size: larger;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* media query on img */
+img.per:hover{  
+    transform: scale(1.1);
+}
+
+
+
+/* responsive links */
+@media screen and (max-width: 700px) {
+    .grid-container{
+        display: inline;
+    }
+
+    #persion{
+        padding: 10px;
+    }
+    
+    img.per{
+        width: 200px;
+    }
+
+}
+
+
+
+
+
+
+/***********************Venue section *********************************/
+.venue-sec{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+iframe{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************** footer section ***********************/
+
+footer{
+    background-image:linear-gradient(to bottom right, rgba(17, 95, 56, 0.5), rgba(105, 101, 134, 0.5) );
+    height: 40vh;
+    padding: 50px;
+}
+
+nav{
+    padding: 7px;
+    
+}
+
+nav a{
+    padding: 5px;
+    font-size: 20px;
+    color: rgba(233, 233, 233, 0.9);
+}
+
+
+
+nav a:hover{
+    background-image: linear-gradient(to bottom right, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* contact us */
+
+h6{
+    font-size: 25px;
+    color: rgba(19, 28, 29, 0.5);
+    padding-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.contact-us a:hover{
+    background-image: linear-gradient(to bottom right, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.contact-us{
+    text-align: right;
+    padding: 10px;
+}
+
+.details a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* copyrights */
+
+.copyright{
+    padding: 10px;
+    text-align: center;
+    color: rgba(50, 51, 50, 0.7);
+}
+
+/* responsive footer */ 
+
+@media screen and (max-width: 600px) {
+    .copyright{
+        padding: 1px;
+    }    
+}
+    
+
+
+
+
+/* reponsive effect */
+.reveal{
+    position: relative;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png"  href="Conferry.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+<body>
+
+   
+    
+    
+    <!-- Image -->
+    <div class="image"></div>
+
+    <!-- Responsive topnav -->
+    <div class="topnav" id="mytopnav" id="home">
+        <a href="#home">Home</a>
+        <a href="#speakers">Speakers</a>
+        <a href="">Schedule</a>
+        <a href="#map">Venue</a>
+
+        <a href="" class="icon">
+                <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+
+   
+
+
+
+    
+
+    <!-- Events Speaker -->
+    <div class="speakers reveal" id="speakers">
+        <h1>Event Speakers</h1>
+
+          <!-- speakers 1-->
+        <div class="grid-container reveal">
+                
+            <div id="person">
+                <a href="" target="">
+                    <img class="per" src="./Speakersimages/Deepak Chopra.jpg">
+                </a>
+                <figcaption>Deepak Chopra</figcaption>
+            </div>
+
+            <div id="person">
+                <a href="">
+                    <img class="per" src="./Speakersimages/Sandeep Maheshwari.jpg">
+                </a>
+                <figcaption>Sandeep Maheshwari</figcaption>       
+            </div>
+            
+            <div id="person">
+                <a href="">
+                    <img class="per" src="./Speakersimages/Jaggi Vasudev.jpg"  >
+                   
+                </a>
+                <figcaption>Jaggi Vasudev</figcaption>
+            </div>
+
+        
+        </div>
+    </div>
+
+
+
+    <!-- Venue section  -->
+    <div class="venue-sec reveal" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99740773544!2d77
+        .35073469956818!3d12.953847715407392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+        1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1650290997491!5m2!1sen!2sin" width="600" height="450"
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+
+     <!-- About this website -->
+     <div class="about-this-website reveal">
+        <h2>About this Website</h2>
+        <p>It's always good to bring a slower friend with you on a hike. If you happen to come across bears, <br> the whole group doesn't have to worry. Only the slowest in the group do. <br> That was the lesson they were about to learn that day.</p>
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer page -->
+
+    <footer>
+        <nav>
+            <a href="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="linkedin"><i class="fa fa-linkedin"></i></a>
+        </nav>
+
+        <div class="contact-us">
+            <div class="details">
+                <h6>Contact us</h6>
+                <a href="tel:+919846325125">98-46325125</a><br>
+                <a href="mailto:conferry@example.com">Conferry@example.com</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; Copyrights All rights reserved 
+        </div>
+      
+        
+    </footer>
+
+  
+
+    <script>
+       function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+
+
+      
+
+    </script>
+    
+  
+</body>
+</html>
